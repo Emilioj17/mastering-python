@@ -1,9 +1,18 @@
-#Complete the function to return the amount of days it will take to cover a route.
-#HINT: You may need to import the math module for this exercise.
-
 def car_route(n,m):
+  if m%n==0:
+    return m/n
+  else:
+    return int((m/n)+1)
   return None
 
 
 #Invoke the function with two intergers.
-print(car_route())
+print(car_route(700,14500))
+
+"""
+Example input
+700
+750
+Example output
+2
+"""
